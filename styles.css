@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.blue {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button.green {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.results {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Estilos para el botón de importación */
+.import-btn-container {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.import-btn {
+    padding: 15px 20px;
+    font-size: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-green {
+    background-color: #2ecc71; /* Verde */
+    color: white; /* Texto en blanco */
+    padding: 10px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .btn-green:hover {
+    background-color: #27ae60; /* Cambio de color al pasar el mouse */
+  }
+  .btn-back {
+    padding: 8px 16px; /* Reducir el relleno */
+    font-size: 14px; /* Reducir el tamaño del texto */
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background-color: #e0e0e0;
+}

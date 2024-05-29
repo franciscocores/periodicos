@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importar nómina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .info {
+            margin-left: 40px;
+        }
+        input[type="date"],
+        input[type="time"],
+        input[type="text"],
+        select {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            text-align: center;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-back {
+            background-color: #ddd;
+            color: #333;
+        }
+        .btn-import {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-gray {
+            background-color: #888;
+            color: #fff;
+        }
+        .btn-gray:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.cmifitzroy.com.ar/images/logo.png" alt="Logo" class="logo">
+        <h1>Importar nómina</h1>
+        <div class="info">
+            <p>Cliente: <select>
+                <option value="Berkley">Berkley</option>
+                <option value="Experta">Experta</option>
+                <option value="Federación Patronal">Federación Patronal</option>
+                <option value="Galeno">Galeno</option>
+                <option value="La segunda">La segunda</option>
+                <option value="Omint">Omint</option>
+                <option value="Prevención">Prevención</option>
+                <option value="Provincia">Provincia</option>
+                <option value="SMG">SMG</option>
+            </select></p>
+            <p>Fecha de exámen: <input type="date"></p>
+            <p>Turno: <input type="time" step="7200"></p>
+            <p>Sede: <select>
+                <option value="Sede Acevedo">Sede Acevedo</option>
+                <option value="Planta">Planta</option>
+                <option value="Móvil">Móvil</option>
+            </select></p>
+            <p>Empresa: <input type="text" maxlength="100"></p>
+        </div>
+        <button class="btn btn-back"><a href="index.html" style="text-decoration: none; color: inherit;">Atrás</a></button>
+        <input type="file" id="fileInput" style="display: none;">
+        <button class="btn btn-gray" onclick="document.getElementById('fileInput').click();">Adjuntar archivo xls/csv</button>
+        <a href="success.html" class="btn btn-import">IMPORTAR NÓMINA</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exámenes periódicos por ART</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.cmifitzroy.com.ar/images/logo.png" alt="Logo" class="logo">
+        <h2>Exámenes periódicos por ART</h2>
+        
+        <!-- Formulario de búsqueda -->
+        <div class="search-form">
+            <div class="form-group">
+                <label for="fecha-desde">Fecha desde</label>
+                <input type="date" id="fecha-desde">
+            </div>
+            <div class="form-group">
+                <label for="fecha-hasta">Fecha hasta</label>
+                <input type="date" id="fecha-hasta">
+            </div>
+            <div class="form-group">
+                <label for="cliente">Cliente ART</label>
+                <select id="cliente">
+                    <option value="Berkley">Berkley</option>
+                    <option value="Experta">Experta</option>
+                    <option value="Federación Patronal">Federación Patronal</option>
+                    <option value="Galeno">Galeno</option>
+                    <option value="La segunda">La segunda</option>
+                    <option value="Omint">Omint</option>
+                    <option value="Prevención">Prevención</option>
+                    <option value="Provincia">Provincia</option>
+                    <option value="SMG">SMG</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado</label>
+                <select id="estado">
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option>
+                    <option value="En proceso">En proceso</option>
+                    <option value="Completado">Completado</option>
+                </select>
+            </div>
+            <button id="buscar">Buscar</button>
+        </div>
+        
+
+<!-- Resultados de búsqueda -->
+<div class="results">
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Fecha asignación</th>
+                <th>Fecha a entregar</th>
+                <th>Estado</th>
+                <th>Sucursal</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>Experta ART</td>
+                <td>2024-01-01</td>
+                <td>2024-03-01</td>
+                <td>Pendiente</td>
+                <td>Sede Acevedo</td>
+            </tr>
+            <tr>
+                <td>Federación Patronal ART</td>
+                <td>2024-01-01</td>
+                <td>2024-03-01</td>
+                <td>En curso</td>
+                <td>Sede Acevedo</td>
+            </tr>
+            <tr>
+                <td>Provincia ART</td>
+                <td>2024-01-01</td>
+                <td>2024-03-01</td>
+                <td>Completo</td>
+                <td>Móvil</td>
+            </tr>
+            <tr>
+                <td>Omint</td>
+                <td>2024-01-01</td>
+                <td>2024-03-01</td>
+                <td>Parcial</td>
+                <td>Planta</td>
+            </tr>
+            <tr>
+                <td>Latitud Sur</td>
+                <td>2024-01-01</td>
+                <td>2024-03-01</td>
+                <td>Completo</td>
+                <td>Planta</td>
+            </tr>
+        </tbody>
+               </tbody>
+            </table>
+        </div>
+
+        <!-- Botones -->
+        <div class="buttons">
+            <button class="blue">Agregar carpeta</button>
+            <button class="blue">Editar</button>
+            <button class="blue">Eliminar</button>
+            <!-- Botón de Importar nómina -->
+            <a href="import.html"class="btn-green">Importar nómina</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
