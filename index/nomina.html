@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Nómina - Exámenes Periódicos por ART</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: #f7f7f7;
+            color: #333;
+            font-size: 12px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px;
+        }
+        .title {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .part {
+            width: 45%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .part p {
+            margin: 0 0 10px;
+        }
+        .attach-button {
+            width: 100%;
+            padding: 8px 0;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        table {
+            width:80%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            margin-left: 120px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.cmifitzroy.com.ar/images/logo.png" alt="Logo">
+        </div>
+        <div class="title">
+            Detalle de nómina - Exámenes periódicos por ART
+        </div>
+        <div class="content">
+            <div class="part">
+                <p>Número de nómina: 1412412</p>
+                <p>ART: Omint ART</p>
+                <p>Empresa: SAFCSA S.A.</p>
+                <p>Fecha: 2024-01-12</p>
+                <p>Turno: 9-11</p>
+                <p>Sede: Sede Acevedo</p>
+            </div> <!-- Parte 2 -->
+            <div class="part">
+                <p>Estado del examen: Parcialmente completo</p>
+                <p>Casos completados: 40</p>
+                <p>Casos pendientes: 10</p>
+                <p>Casos ausentes: 5</p>
+                <p>Fecha estimada de entrega: 30/06/2024</p>
+            </div> <!-- Parte 3 -->
+            <div class="part">
+                <input type="file" id="fileInput" style="display: none;">
+                <button class="attach-button" onclick="document.getElementById('fileInput').click();">Adjuntar archivo</button>
+            </div> <!-- Parte 4 -->
+            <div class="part">
+                <p>Documentos Adjuntos a la nómina:</p>
+                <p><td><a href="adjunto1.pdf" class="edit-button">adjunto1.pdf</a></td> </p>
+                <p><td><a href="adjunto2.pdf" class="edit-button">adjunto2.pdf</a></td> </p>
+            </div> 
+        </div>
+    </div>    
+</body>
+<body>
+       
+        <!-- Segunda parte de la página con la tabla -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo y número de documento</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Sexo</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Ocupación</th>
+                    <th>Sucursal</th>
+                    <th>Fecha de Examen</th>
+                    <th>Grupo</th>
+                    <th>Estado</th>
+                    <th>Agrupación</th>
+                    <th>Turno</th>
+                    <th>RAR</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DNI 12345678</td>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td>Masculino</td>
+                    <td>1980-05-15</td>
+                    <td>Electricista</td>
+                    <td>Sucursal A</td>
+                    <td>2024-05-01</td>
+                    <td>A</td>
+                    <td>Completo</td>
+                    <td>Grupo 1</td>
+                    <td>9-11</td>
+                    <td>12345</td>
+                    <td><a href="nomina.html" class="edit-button">Editar</a></td> <!-- Botón Editar -->
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>DNI 12345678</td>
+                        <td>Juan</td>
+                        <td>Pérez</td>
+                        <td>Masculino</td>
+                        <td>1980-05-15</td>
+                        <td>Electricista</td>
+                        <td>Sucursal A</td>
+                        <td>2024-05-01</td>
+                        <td>A</td>
+                        <td>Completo</td>
+                        <td>Grupo 1</td>
+                        <td>9-11</td>
+                        <td>12345</td>
+                        <td><a href="nomina.html" class="edit-button">Editar</a></td> <!-- Botón Editar -->
+                    </tr>
+                    <!-- Otras 14 filas similares -->
+                    <tr>
+                        <td>DNI 23456789</td>
+                        <td>Maria</td>
+                        <td>López</td>
+                        <td>Femenino</td>
+                        <td>1978-09-20</td>
+                        <td>Enfermera</td>
+                        <td>Sucursal B</td>
+                        <td>2024-05-01</td>
+                        <td>B</td>
+                        <td>Completo</td>
+                        <td>Grupo 2</td>
+                        <td>9-11</td>
+                        <td>67890</td>
+                        <td><a href="nomina.html" class="edit-button">Editar</a></td> <!-- Botón Editar -->
+                    </tr>
+                    <tr>
+                        <td>DNI 34567890</td>
+                        <td>Pedro</td>
+                        <td>García</td>
+                        <td>Masculino</td>
+                        <td>1985-03-10</td>
+                        <td>Mecánico</td>
+                        <td>Sucursal C</td>
+                        <td>2024-05-01</td>
+                        <td>A</td>
+                        <td>Completo</td>
+                        <td>Grupo 1</td>
+                        <td>9-11</td>
+                        <td>12346</td>
+                        <td><a href="nomina.html" class="edit-button">Editar</a></td> <!-- Botón Editar -->
+                    </tr>
+                    <tr>
+                        <td>DNI 45678901</td>
+                        <td>Ana</td>
+                        <td>Ruiz</td>
+                        <td>Femenino</td>
+                        <td>1970-07-25</td>
+                        <td>Contadora</td>
+                        <td>Sucursal A</td>
+                        <td>2024-05-01</td>
+                        <td>B</td>
+                        <td>Completo</td>
+                        <td>Grupo 2</td>
+                        <td>9-11</td>
+                        <td>67891</td>              
+                        <td><a href="nomina.html" class="edit-button">Editar</a></td> <!-- Botón Editar -->
+                    </tr>
+            <tbody>
+                <tr>
+                    <td>DNI 12345678</td>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td>Masculino</td>
+                    <td>1980-05-15</td>
+                    <td>Electricista</td>
+                    <td>Sucursal A</td>
+                    <td>2024-05-01</td>
+                    <td>A</td>
+                    <td>Completo</td>
+                    <td>Grupo 1</td>
+                    <td>9-11</td>
+                    <td>12345</td>
+                    <td><a href="nomina.html" class="edit-button">Editar</a></td> <!-- Botón Editar -->
+                </tr>
+                <!-- Otras 14 filas similares -->
+                <tr>
+                    <td>DNI 23456789</td>
+                    <td>Maria</td>
+                    <td>López</td>
+                    <td>Femenino</td>
+                    <td>1978-09-20</td>
+                    <td>Enfermera</td>
+                    <td>Sucursal B</td>
+                    <td>2024-05-01</td>
+                    <td>B</td>
+                    <td>Completo</td>
+                    <td>Grupo 2</td>
+                    <td>9-11</td>
+                    <td>67890</td>
+                    <td><a href="nomina.html" class="edit-button">Editar</a></td> <!-- Botón Editar -->
+                </tr>
+                <tr>
+                    <td>DNI 34567890</td>
+                    <td>Pedro</td>
+                    <td>García</td>
+                    <td>Masculino</td>
+                    <td>1985-03-10</td>
+                    <td>Mecánico</td>
+                    <td>Sucursal C</td>
+                    <td>2024-05-01</td>
+                    <td>A</td>
+                    <td>Completo</td>
+                    <td>Grupo 1</td>
+                    <td>9-11</td>
+                    <td>12346</td>
+                    <td><a href="nomina.html" class="edit-button">Editar</a></td> <!-- Botón Editar -->
+                </tr>
+                <tr>
+                    <td>DNI 45678901</td>
+                    <td>Ana</td>
+                    <td>Ruiz</td>
+                    <td>Femenino</td>
+                    <td>1970-07-25</td>
+                    <td>Contadora</td>
+                    <td>Sucursal A</td>
+                    <td>2024-05-01</td>
+                    <td>B</td>
+                    <td>Completo</td>
+                    <td>Grupo 2</td>
+                    <td>9-11</td>
+                    <td>67891</td>
+                    <td><a href="nomina.html" class="edit-button">Editar</a></td> <!-- Botón Editar -->
+                </tr>
+                <tr>
+                    <td>CI 87654321</td>
+                    <td>Maria</td>
+                    <td>González</td>
+                    <td>Femenino</td>
+                    <td>1975-10-20</td>
+                    <td>Médica</td>
+                    <td>Sucursal B</td>
+                    <td>2024-05-01</td>
+                    <td>B</td>
+                    <td>Completo</td>
+                    <td>Grupo 2</td>
+                    <td>9-11</td>
+                    <td>67890</td>
+                    <td><a href="nomina.html" class="edit-button">Editar</a></td> <!-- Botón Editar -->
+                </tr>
+                <!-- Otras 13 filas similares -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

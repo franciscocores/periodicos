@@ -1,0 +1,10 @@
+Crear una web de login externo.
+
+Banner en el centro: https://www.cmifitzroy.com.ar/images/logo.png
+
+Título: Examenes periódicos por ART
+
+Usuario: Campo para colocar usuario
+Contraseña: Campo para colocar contraseña
+
+Botón Acceder (haciendo click al botón redirige a index_art.html)
